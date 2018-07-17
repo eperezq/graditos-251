@@ -94,6 +94,12 @@ Route::get('/', function () {
    Route::get('detaentra/{id}/editar','DetalleEntradaController@edit')->name('detallentradaedit');
 
 
+    // detalle salida
+    Route::get('detasalida','DetalleSalidaController@index')->name('detallesalida');
+    Route::get('creardetasalida','DetalleSalidaController@create')->name('salidashow');
+    Route::post('creardetasalida','DetalleSalidaController@store')->name('creardetasalida');
+
+
 
 Route::get('error', function () {
    abort(404);
