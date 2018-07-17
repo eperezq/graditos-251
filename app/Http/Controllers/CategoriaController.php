@@ -22,7 +22,7 @@ class CategoriaController extends Controller
         
         $categoria = Categoria::create(request()->all());
         // dd($categoria);
-        return redirect()->back();
+        return redirect()->back()->with('message', 'Categoria creado Correctamente');
     }
 
     public function edit(Categoria $id){
@@ -36,11 +36,11 @@ class CategoriaController extends Controller
        
         $id ->update(request()->all());
          
-        return redirect()->back();
+        return redirect()->back()->with('message', 'Categoria actualizada Correctamente');
     }
     public function destroy(Categoria $id){
        
         $id->delete();
-        return redirect()->back();
+        return redirect()->back()->with('message', 'Categoria eliminada Correctamente');
     }
 }

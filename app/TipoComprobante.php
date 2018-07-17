@@ -9,7 +9,7 @@ class TipoComprobante extends Model
     public $timestamps = false;
     protected $table='tipocomprobante';
     protected $primaryKey = 'idTipoComp';
-    protected $fillable = ['idTipoComp',''];
+    protected $fillable = ['idTipoComp','descripcion'];
     protected $guarded = 'idTipoComp';
     
 

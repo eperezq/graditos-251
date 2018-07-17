@@ -1876,10 +1876,9 @@ input[type=date] {
 /* Custom Select */
 
 .select {
-    background: #2c386b;
-    color: white;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
     border-radius: 4px;
+    border: 1px solid
 }
 
-
-/* Transition */

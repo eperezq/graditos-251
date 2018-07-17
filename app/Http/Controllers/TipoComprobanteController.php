@@ -19,23 +19,23 @@ class TipoComprobanteController extends Controller
     {
         
         $comprobante = TipoComprobante::create(request()->all());
-        return $comprobante;
+        // return $comprobante;
         return redirect()->back();
     }
     public function edit(TipoComprobante $id)
     {
         
-        return view('comprobante.comprobante-create',compact('id'));
+        return view('comprobante.comprobante-edit',compact('id'));
     }
     public function update(TipoComprobante $id)
     {
         
         $id ->update(request()->all());
-        return $id;
+        // return $id;
         return redirect()->back();
     }
     public function destroy(TipoComprobante $id){
-        return $id;
+        // return $id;
         $id->delete();
         return redirect()->back();
     }

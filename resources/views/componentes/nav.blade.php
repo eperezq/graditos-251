@@ -225,7 +225,20 @@
                 <nav class="sidebar-nav ">
                     <ul id="sidebarnav" class="p-t-30">
                         
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url('inicio') }}" aria-expanded="false"><i class="mdi mdi-chart-bar"></i><span class="hide-menu">Inicio</span></a></li>        
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url('inicio') }}" aria-expanded="false"><i class="mdi mdi-chart-bar"></i><span class="hide-menu">Inicio</span></a></li> 
+                        
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-archway"></i><span class="hide-menu">Almacen </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item"><a href="{{ url('producto') }}" class="sidebar-link"><i class="fas fa-dolly"></i><span class="hide-menu"> Producto </span></a></li>
+                                
+                                <li class="sidebar-item"><a href="{{ url('categoria') }}" class="sidebar-link"><i class="fas fa-box-open"></i><span class="hide-menu"> Categoria </span></a></li>
+                                
+                                <li class="sidebar-item"><a href="{{ url('entrada') }}" class="sidebar-link"><i class="mdi mdi-emoticon"></i><span class="hide-menu"> Entrada </span></a></li>
+                            </ul>
+                       
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url('comprobante') }}" aria-expanded="false"><i class="mdi mdi-chart-bar"></i><span class="hide-menu">Comprobante</span></a></li> 
+                        
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-worker"></i><span class="hide-menu">Empleados </span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item"><a href="{{ url('empleado') }}" class="sidebar-link"><i class="mdi mdi-emoticon"></i><span class="hide-menu"> Visualizar </span></a></li>
@@ -239,14 +252,7 @@
                             </ul>
                         </li>
                        
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-dolly"></i><span class="hide-menu">Producto </span></a>
-                            <ul aria-expanded="false" class="collapse  first-level">
-                                    
-                                <li class="sidebar-item"><a href="{{ url('producto') }}" class="sidebar-link"><i class="mdi mdi-emoticon"></i><span class="hide-menu"> Visualizar </span></a></li>
-                               
-                                <li class="sidebar-item"><a href="{{ url('categoria') }}" class="sidebar-link"><i class="fas fa-box-open"></i><span class="hide-menu"> Categoria </span></a></li>
-                            </ul>
-                        </li>
+
 
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-truck"></i><span class="hide-menu">Proveedor </span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
@@ -286,7 +292,7 @@
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-            <footer class="footer  fixed-bottom-01 bg-footer ">
+            <footer class="footer   ">
                     <p class="black-text sise-t-17 text-center mt-2">
                             ©  2018 Todos los derechos reservados 
                         <a href="#" class="blue-text b-01  pr-4 pl-4 pt-2 pb-2 redondear">

@@ -14,7 +14,10 @@ class DetalleEntradaController extends Controller
 {
     public function index(){
         $detallesen = DetalleEntrada::orderBy('fechaVencimiento','desc')->get();
-        return view('detalleEntrada.deta-show',compact('detallesen'));
+        $proveedores=Proveedor::all();
+        $productos=producto::all();
+        $tipocomprobantes=TipoComprobante::all();
+        return view('detalleEntrada.deta-show',compact('detallesen','proveedores','productos','tipocomprobantes'));
     }
     public function create(){
         $proveedores=Proveedor::all();

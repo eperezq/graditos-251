@@ -52,5 +52,5 @@
 {{--  --}}
 {{-- departamento,provincia,distrito, --}}
 {{-- <label for="">Correo eléctronico</label>
-<input type="text" name="email2" value="{{old('email2',isset($id)? $id->email2 : '')}}"> --}}
+<input type="text" name="email2" value="{{old('email2',isset($id)? $id->email2 : '')}}">                                                                                                                                                                                --}}
 
