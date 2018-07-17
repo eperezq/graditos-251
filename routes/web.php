@@ -58,6 +58,17 @@ Route::get('/', function () {
 
 
 
+
+    
+    Route::get('platillo','PlatilloController@index')->name('platillo');
+    Route::get('crearplatillo','PlatilloController@create')->name('platilloshow');
+    Route::post('crearplatillo','PlatilloController@store')->name('platillocreate');
+    Route::get('platillo/{id}/editar','PlatilloController@edit')->name('platilloedit');
+    Route::patch('platillo/{id}','PlatilloController@update')->name('platilloupdate');
+    Route::delete('platillo/{id}','PlatilloController@destroy')->name('platillodelete');
+
+
+
     
     Route::get('comprobante','TipoComprobanteController@index')->name('comprobante');
     Route::get('crearcomprobante','TipoComprobanteController@create')->name('comprobanteshow');
