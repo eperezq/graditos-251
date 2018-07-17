@@ -78,6 +78,14 @@ Route::get('/', function () {
     Route::delete('comprobante/{id}','TipoComprobanteController@destroy')->name('comprobantedelete');
 
 
+    Route::get('salida','SalidaController@index')->name('salida');
+    Route::get('crearsalida','SalidaController@create')->name('salidashow');
+    Route::post('crearsalida','SalidaController@store')->name('salidacreate');
+    Route::get('salida/{id}/editar','SalidaController@edit')->name('salidaedit');
+    Route::patch('salida/{id}','SalidaController@update')->name('salidaupdate');
+    Route::delete('salida/{id}','SalidaController@destroy')->name('salidadelete');
+
+
 
     Route::get('detaentra','DetalleEntradaController@create')->name('detallentradashow');
     Route::post('detaentra','DetalleEntradaController@store');
