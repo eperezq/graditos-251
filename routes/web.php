@@ -87,8 +87,13 @@ Route::get('/', function () {
 
 
 
-    Route::get('detaentra','DetalleEntradaController@create')->name('detallentradashow');
-    Route::post('detaentra','DetalleEntradaController@store');
+   // detalle entrada
+   Route::get('entrada','DetalleEntradaController@index')->name('detallentrada');
+   Route::get('detaentra','DetalleEntradaController@create')->name('detallentradashow');
+   Route::post('detaentra','DetalleEntradaController@store');
+   Route::get('detaentra/{id}/editar','DetalleEntradaController@edit')->name('detallentradaedit');
+
+
 
 Route::get('error', function () {
    abort(404);
