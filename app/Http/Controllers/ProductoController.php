@@ -10,8 +10,9 @@ class ProductoController extends Controller
 {
     public function index(){
         $productos=Producto::orderBy('idProducto','desc')->get();
+        $categorias=Categoria::all();
         // $productos=Producto::all();
-        return view('producto.produ-show',compact('productos'));
+        return view('producto.produ-show',compact('productos','categorias'));
     }
 
     public function create(){

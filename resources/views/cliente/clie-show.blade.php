@@ -6,6 +6,10 @@
     <div class="card">
         <div class="card-body">
             <h5 class="card-title">Basic Datatable</h5>
+            <button type="submit" class="btn blue b-01 sm-02 float-right" data-toggle="modal" data-target="#modalCliente">
+                    <i class="fas fa-sign mr-2"></i>
+                    Agregar
+            </button>
             <div class="table-responsive">
                 <table class="table table-bordered-01">
                     <thead class="text-center">
@@ -74,6 +78,6 @@
         </div>
     </div>
     
-    
+    @include('cliente.clie-create')
     
 @endsection

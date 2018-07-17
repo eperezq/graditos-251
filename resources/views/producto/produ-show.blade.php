@@ -3,6 +3,10 @@
 @section('content')
     <div class="card">
         <div class="card-body">
+                <button type="submit" class="btn blue b-01 sm-02 float-right" data-toggle="modal" data-target="#modalProducto">
+                        <i class="fas fa-sign mr-2"></i>
+                        Agregar
+                </button>
             <h5 class="card-title">Basic Datatable</h5>
             <div class="table-responsive">
                 <table class="table table-bordered-01">
@@ -55,6 +59,6 @@
         </div>
     </div>
     
-
+    @include('producto.produ-create')
 
 @endsection
