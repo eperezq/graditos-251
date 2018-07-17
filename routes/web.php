@@ -57,6 +57,17 @@ Route::get('/', function () {
     Route::delete('producto/{id}','ProductoController@destroy')->name('productodelete');
 
 
+
+    
+    Route::get('comprobante','TipoComprobanteController@index')->name('comprobante');
+    Route::get('crearcomprobante','TipoComprobanteController@create')->name('comprobanteshow');
+    Route::post('crearcomprobante','TipoComprobanteController@store')->name('comprobantecreate');
+    Route::get('comprobante/{id}/editar','TipoComprobanteController@edit')->name('comprobanteedit');
+    Route::patch('comprobante/{id}','TipoComprobanteController@update')->name('comprobanteupdate');
+    Route::delete('comprobante/{id}','TipoComprobanteController@destroy')->name('comprobantedelete');
+
+
+
     Route::get('detaentra','DetalleEntradaController@create')->name('detallentradashow');
     Route::post('detaentra','DetalleEntradaController@store');
 
