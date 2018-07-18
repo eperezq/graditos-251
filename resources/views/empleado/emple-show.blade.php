@@ -32,9 +32,13 @@
                         <td>{{$car->nombres}}</td>
                         <td class="text-center">{{$car->cargo->descripcion}}</td>
                         <td class="text-center sm-02" >
-                            <button class="btn green btn-sm b-01 sm-02">
-                                <a href="editarempleado/{{$car->idEmpleado}}/editar" class="white-text">Editar</a>
-                            </button>
+                           
+                            <a href="editarempleado/{{$car->idEmpleado}}/editar" class="white-text">
+                                <button class="btn green btn-sm b-01 sm-02">
+                                Editar
+                                </button>
+                            </a>
+                          
                         </td>
                             <form action="/{{$car->idEmpleado}}" method="post">
                             {{method_field('delete')}}

@@ -36,30 +36,7 @@
     </div>
 </div>
 
-<!--<form action="{{route('crearempleados')}}" method="post" name="formdist" id="needs-validation" novalidate>
-    {{csrf_field()}} 
-    @include('empleado/errores._errorsempleado')
-    @include('empleado._formempleado')
 
-    <div class="row">
-        <div class="col-md-6">
-            <label for="">Cargo</label>
-            <select name="idCargo" id="" class="custom-select select">
-                @foreach($cargos  as $cargo)
-                    <option value="{{$cargo->idCargo}}">{{$cargo->descripcion}}</option>
-                    
-                @endforeach
-            </select>
-            <br>
-        </div>
-        <div class="col-md-6">
-                <div class="col-lg-12 col-sm-12 col-12 text-center mt-4">
-                    <button class="btn btn-info" type="submit">Crear</button>
-                </div>
-        </div>
-        
-    </div>       
-</form> -->
 
 
 

@@ -57,9 +57,13 @@
                         
                             
                             <td>
-                                <button class="btn green btn-sm b-01 sm-02">
-                                    <a href="cliente/{{$clie->idCliente}}/editar" class="white-text">Editar</a>
-                                </button>
+                                
+                                    <a href="cliente/{{$clie->idCliente}}/editar" class="white-text">
+                                        <button class="btn green btn-sm b-01 sm-02">
+                                            Editar
+                                        </button>
+                                    </a>
+                                
                             </td>
 
                                 <form action="cliente/{{$clie->idCliente}}" method="post">

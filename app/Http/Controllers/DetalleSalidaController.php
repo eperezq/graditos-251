@@ -17,8 +17,11 @@ use DB;
 class DetalleSalidaController extends Controller
 {
     public function index(){
+        $salidas=Salida::all();
+        // return $salidas;
+        $productos=producto::all();
         $detallessa = DetalleSalida::orderBy('fechaSalida')->get();
-        return view('detalleSalida.sali-show',compact('detallessa'));
+        return view('detalleSalida.sali-show',compact('detallessa','salidas','productos'));
     }
     public function create(){
         $salidas=Salida::all();

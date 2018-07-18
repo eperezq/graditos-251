@@ -233,33 +233,24 @@
                                 
                                 <li class="sidebar-item"><a href="{{ url('categoria') }}" class="sidebar-link"><i class="fas fa-box-open"></i><span class="hide-menu"> Categoria </span></a></li>
                                 
-                                <li class="sidebar-item"><a href="{{ url('entrada') }}" class="sidebar-link"><i class="mdi mdi-emoticon"></i><span class="hide-menu"> Entrada </span></a></li>
-                            </ul>
-                       
-                        </li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url('comprobante') }}" aria-expanded="false"><i class="mdi mdi-chart-bar"></i><span class="hide-menu">Comprobante</span></a></li> 
-                        
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-worker"></i><span class="hide-menu">Empleados </span></a>
-                            <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="{{ url('empleado') }}" class="sidebar-link"><i class="mdi mdi-emoticon"></i><span class="hide-menu"> Visualizar </span></a></li>
-                            </ul>
-                        </li>
-
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-face"></i><span class="hide-menu">Cliente </span></a>
-                            <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="{{ url('cliente') }}" class="sidebar-link"><i class="mdi mdi-emoticon"></i><span class="hide-menu"> Visualizar </span></a></li>
-                               
-                            </ul>
-                        </li>
-                       
-
-
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-truck"></i><span class="hide-menu">Proveedor </span></a>
-                            <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="{{ url('proveedor') }}" class="sidebar-link"><i class="mdi mdi-emoticon"></i><span class="hide-menu"> Visualizar </span></a></li>
+                                <li class="sidebar-item"><a href="{{ url('entrada') }}" class="sidebar-link"><i class="fas fa-sign-in-alt"></i><span class="hide-menu"> Entrada </span></a></li>
                                 
+                                <li class="sidebar-item"><a href="{{ url('detasalida') }}" class="sidebar-link"><i class="fas fa-sign-out-alt"></i><span class="hide-menu"> Salida </span></a></li>
                             </ul>
+                       
                         </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url('comprobante') }}" aria-expanded="false"><i class="fas fa-file-alt"></i><span class="hide-menu">Comprobante</span></a></li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url('empleado') }}" aria-expanded="false"><i class="mdi mdi-worker"></i><span class="hide-menu">Empleados</span></a></li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url('cliente') }}" aria-expanded="false"><i class="mdi mdi-face"></i><span class="hide-menu">Cliente</span></a></li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url('proveedor') }}" aria-expanded="false"><i class="fas fa-truck"></i><span class="hide-menu">Proveedor</span></a></li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url('platillo') }}" aria-expanded="false"><i class="fas fa-utensils"></i><span class="hide-menu">Platos</span></a></li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url('salida') }}" aria-expanded="false"><i class="fas fa-th-large"></i><span class="hide-menu">Areas</span></a></li>
+                        
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
